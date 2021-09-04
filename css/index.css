@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+body {
+  /* background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+  color:white;
+  text-align:center; */
+
+  background: url("../imgs/hsptl.jpg");
+  /* background-image: url('imgs/hsptl.jpg'); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.btn-group button {
+    
+    background-color: #5718bd; /* Green background */
+    border: 1px solid rgb(32, 94, 187); /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 100%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: #0a0a0a;
+  }
+
+  .btn-group-vertical{
+    display: flex;
+  justify-content: center;
+  }
