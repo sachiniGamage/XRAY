@@ -31,7 +31,7 @@
 				</tr>
 
 				<?php
-            require('../config/db.php');
+            require('../config/config.php');
 			$myInput=$_POST["myInput"]; 
 				 if(isset($_POST['myInput'])){
 					
@@ -49,7 +49,7 @@
                     echo '<td>'. $row['pat_gender'] .'</td>';
 					echo '<td>'. $row['pat_address'] .'</td>';
                     echo '<td>'. $row['pat_phone'] .'</td>';
-					echo '<td>'. $row['email'] .'</td>';
+					echo '<td>'. $row['pat_email'] .'</td>';
                     echo '</tr>';
                 }
             }

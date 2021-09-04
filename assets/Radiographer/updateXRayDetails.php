@@ -1,5 +1,5 @@
 <?php
-require('../../config/db.php');
+require('../../config/config.php');
 // $myInput=$_POST["myInput"];
 $xrayID=$_POST["xrayID"];
 $patID=$_POST["patID"]; 

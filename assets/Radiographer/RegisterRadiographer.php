@@ -1,6 +1,6 @@
 <?php
     // require('DBConnection.php');
-    require('../../config/db.php');
+    require('../../config/config.php');
 
     $rad_fname  = $_POST["rad_fname"];
     $rad_lname =$_POST["rad_lname"];

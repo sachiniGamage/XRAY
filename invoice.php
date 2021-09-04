@@ -43,7 +43,7 @@ $pdf->Cell(34,5, $invoice['app_id'],0,1);
 
 $pdf->Cell(130,5,'Fax [+362 222 261]',0,0);
 $pdf->Cell(25,5,'Patient ID',0,0);
-$pdf->Cell(34,5,$invoice['user_id'],0,1);
+$pdf->Cell(34,5,$invoice['app_patid'],0,1);
 //make dummy empty vertical space
 
 

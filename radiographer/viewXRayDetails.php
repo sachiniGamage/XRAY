@@ -1,9 +1,7 @@
 <?php 
-include('../config/db.php');
+include('../config/config.php');
 include('dashbrd3.php');
 ?>
-
-
 
 
 <!DOCTYPE html>
@@ -14,15 +12,6 @@ include('dashbrd3.php');
 <link rel = "stylesheet" type="text/css" href="../css/tablecss.css">
 <link rel = "stylesheet" type="text/css" href="../css/radiographer/viewXRayDetailscss.css">
 
-
-
-
-
-<!-- <script>
-    if ( window.history.replaceState ) {
-        window.history.replaceState( null, null, window.location.href );
-    }
-</script> -->
 
 </head>
 <body>
@@ -262,7 +251,7 @@ if ($result = $con -> query("SELECT `doc_id`,`doc_fname`,`doc_lname` FROM `docto
     <th> Date </th>
     </tr>
         <?php
-            require('../config/db.php');
+            require('../config/config.php');
             $patID=$_POST["patID"];
 				 if(isset($_POST['chck'])){
 					

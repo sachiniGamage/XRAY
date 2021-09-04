@@ -1,5 +1,5 @@
 <?php
-require('../../config/db.php');
+require('../../config/config.php');
 $patID=$_POST["patID"];
 $tday=$_POST["tday"]; 
 

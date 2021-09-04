@@ -1,6 +1,6 @@
 <?php
     // require('DBConnection.php');
-    require('../../config/db.php');
+    require('../../config/config.php');
 
     // When form submitted, insert values into the database.
     if (isset($_REQUEST['doc_fname'])) {

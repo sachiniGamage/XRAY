@@ -1,5 +1,5 @@
 <?php
-require('../../config/db.php');
+require('../../config/config.php');
 // $myInput=$_POST["myInput"];
 $PID=$_POST["PID"];
 $query=$_POST["query"]; 
@@ -33,7 +33,7 @@ if (isset($_POST['sbmit'])) {
 ?>
 
 <?php
-require('../../config/db.php');
+require('../../config/config.php');
 // $myInput=$_POST["myInput"];
 $PID=$_POST["PID"];
 $QID=$_POST["QID"];

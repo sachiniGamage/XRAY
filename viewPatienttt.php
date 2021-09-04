@@ -148,7 +148,7 @@
 					</div>
 				
 					<div class="form-row">
-						<input type="text" name="pat_infomation" id="pat_infomation" class="input-text"  placeholder="additional information">
+						<input type="text" name="pat_information" id="pat_information" class="input-text"  placeholder="additional information">
 					</div>
 
 					<div class="form-row">
@@ -177,7 +177,7 @@
                     obj[index][7] ,obj[index][8], obj[index][9]);
           }
 
-          function fill_fields(pat_id, pat_fname, pat_lname, pat_age, pat_gender, pat_address, pat_phone,pat_infomation,pat_email) {
+          function fill_fields(pat_id, pat_fname, pat_lname, pat_age, pat_gender, pat_address, pat_phone,pat_information,pat_email) {
                document.getElementById("pat_id").value = pat_id;
                document.getElementById("pat_fname").value = pat_fname;
                document.getElementById("pat_lname").value = pat_lname;
@@ -185,7 +185,7 @@
                document.getElementById("pat_gender").value = pat_gender;
                document.getElementById("pat_address").value = pat_address;
                document.getElementById("pat_phone").value = pat_phone;
-               document.getElementById("pat_information").value = pat_infomation;
+               document.getElementById("pat_information").value = pat_information;
                document.getElementById("pat_email").value = pat_email;
           }
      </script>

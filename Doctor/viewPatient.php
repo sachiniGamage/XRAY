@@ -26,11 +26,11 @@
 			<th> Email </th>
 		</tr>
         <?php
-            require('../config/db.php');
+            require('../config/config.php');
 			$myInput=$_POST["myInput"]; 
 				 if(isset($_POST['myInput'])){
 					
-					$query ="SELECT `pat_id`,`pat_fname`,`pat_lname`,`pat_age`,`pat_gender`,`pat_address`,`pat_phone`,`pat_email` FROM `patient` WHERE pat_id = '".$myInput."' OR `pat_email` = '".$myInput."'";
+					$query ="SELECT `pat_id`,`pat_fname`,`pat_lname`,`pat_age`,`pat_gender`,`pat_address`,`pat_phone`,`pat_email` FROM `patient` WHERE pat_id = '".$myInput."' OR pat_email = '".$myInput."'";
 					
 					$result = mysqli_query($con,$query);
             if(mysqli_num_rows($result) > 0){
@@ -44,7 +44,7 @@
                     echo '<td>'. $row['pat_gender'] .'</td>';
 					echo '<td>'. $row['pat_address'] .'</td>';
                     echo '<td>'. $row['pat_phone'] .'</td>';
-					echo '<td>'. $row['email'] .'</td>';
+					echo '<td>'. $row['pat_email'] .'</td>';
                     echo '</tr>';
                 }
             }

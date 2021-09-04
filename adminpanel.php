@@ -128,9 +128,10 @@ Avissaweela base hospital radiology department
       <li class="active"><a href="#">Dashboard</a></li>
       <li><a href="admin_regDoc.php">Add Doctor</a></li>
       <li><a href="admin_regPatient.php">Add Patient</a></li>
+      <li><a href="admin_regRad.php">Add Radiographer</a></li>
         <li><a href="admin_viewDoctor.php">View Doctor</a></li>
         <li><a href="admin_viewPatient.php">View Patient</a></li>
-        
+        <li><a href="admin_viewRad.php">View Radiographer</a></li>
         <li><a href="admin_viewappoint.php">View Appointments</a></li>
         
         <br><br><br><br><br>

@@ -6,7 +6,7 @@ include("DocIndex.php");
 
 
     // require('DBConnection.php');
-    require('../../config/db.php');
+    require('../../config/config.php');
 
     $email=$_POST["email"];
     $psw=$_POST["psw"]; 

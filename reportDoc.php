@@ -1,7 +1,7 @@
 <?php
 require('fpdf183/fpdf.php');
-$db = new PDO('mysql:host=localhost:3306;dbname=xrayUnit','phpmyadmin','Root@123');
-$db2 = new PDO('mysql:host=localhost:3306;dbname=xrayUnit','phpmyadmin','Root@123');
+$db = new PDO('mysql:host=sql6.freemysqlhosting.net:3306;dbname=sql6434602','sql6434602','RLvMQHHwhZ');
+$db2 = new PDO('mysql:host=sql6.freemysqlhosting.net:3306;dbname=sql6434602','sql6434602','RLvMQHHwhZ');
 class myPDF extends FPDF{
     
     function header(){
@@ -36,7 +36,7 @@ class myPDF extends FPDF{
     function viewTable($db){
         $this -> SetFont('Times','',12);
         $patID=$_POST["myInput"];
-        $stmt = $db -> query("SELECT `pat_id`, `pat_fname`, `pat_lname`, `pat_age`, `pat_gender`, `pat_address`, `pat_phone`,`pat_email` FROM `patient` WHERE `pat_id`='".$patID."'");
+        $stmt = $db -> query("SELECT `pat_id`, `pat_fname`, `pat_lname`, `pat_age`, `pat_gender`, `pat_address`, `pat_phone`,`pat_email` FROM `patient` WHERE `pat_id`='".$patID."' OR pat_email = '".$patID."'");
         while($data = $stmt->fetch(PDO :: FETCH_OBJ)){
             $this -> Cell(20,10,$data -> pat_id,0,0,'C');
             $this -> Cell(40,10,$data -> pat_fname,0,0,'C');
@@ -45,7 +45,7 @@ class myPDF extends FPDF{
             $this -> Cell(30,10,$data -> pat_gender,0,0,'C');
             $this -> Cell(66,10,$data -> pat_address,0,0,'C');
             $this -> Cell(36,10,$data -> pat_phone,0,0,'C');
-            $this -> Cell(36,10,$data -> email,0,0,'C');
+            $this -> Cell(36,10,$data -> pat_email,0,0,'C');
             $this -> Ln();
         }
     }

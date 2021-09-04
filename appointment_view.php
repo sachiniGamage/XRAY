@@ -204,6 +204,12 @@ Avissaweela base hospital radiology department
                                              value="update">Update Info</button>
                                         <button type="submit" style="color:#D35B61" class="form-control" id="cf-submit"
                                              name="submit" value="delete">Delete Appointment</button>
+
+                                             <br>
+                                             <br>
+
+                                             <li class="appointment-btn" align='middle' > <a href = "report.php" name = "view">PRINT APPOINTMENT RECIEPT</a></li>
+
                                    </div>
                               </div>
                          </form>

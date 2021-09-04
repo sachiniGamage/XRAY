@@ -1,5 +1,5 @@
 <?php
-require('../../config/db.php');
+require('../../config/config.php');
 
 $subRegion1=$_POST["subRegion1"];
 $views1=$_POST["views1"]; 
@@ -10,6 +10,7 @@ $Region1="head";
 $tday=$_POST["tday"]; 
 
 echo($subRegion1);
+
 
 if (isset($_POST['sbmit1'])) {
     $patID = mysqli_real_escape_string($con, $patID);
@@ -23,6 +24,7 @@ if (isset($_POST['sbmit1'])) {
 	$query = "INSERT INTO `xray`(`xray_patid`, `xray_docid`, `xray_radid`, `xray_Region`, `xray_subRegion`, `views`, `date`) 
      VALUES (".$patID.",'".$doctor."','".$Radiographers."','".$Region1."','".$subRegion1."','".$views1."','".$tday."')" ;
     echo($query);
+    var_dump($query);
      mysqli_query($con, $query);
     
 	echo "Registered successfully";
@@ -33,7 +35,7 @@ if (isset($_POST['sbmit1'])) {
 ?>
 
 <?php
-require('../../config/db.php');
+require('../../config/config.php');
 
 $subRegion2=$_POST["subRegion2"];
 $views2=$_POST["views2"]; 
@@ -67,7 +69,7 @@ if (isset($_POST['sbmit2'])) {
 ?>
 
 <?php
-require('../../config/db.php');
+require('../../config/config.php');
 
 $subRegion3=$_POST["subRegion3"];
 $views3=$_POST["views3"]; 
@@ -101,7 +103,7 @@ if (isset($_POST['sbmit3'])) {
 ?>
 
 <?php
-require('../../config/db.php');
+require('../../config/config.php');
 
 $subRegion4=$_POST["subRegion4"];
 $views4=$_POST["views4"]; 
@@ -135,7 +137,7 @@ if (isset($_POST['sbmit4'])) {
 ?>
 
 <?php
-require('../../config/db.php');
+require('../../config/config.php');
 
 $subRegion5=$_POST["subRegion5"];
 $views5=$_POST["views5"]; 
@@ -169,7 +171,7 @@ if (isset($_POST['sbmit5'])) {
 ?>
 
 <?php
-require('../../config/db.php');
+require('../../config/config.php');
 
 $subRegion6=$_POST["subRegion6"];
 $views6=$_POST["views6"]; 
@@ -203,7 +205,7 @@ if (isset($_POST['sbmit6'])) {
 ?>
 
 <?php
-require('../../config/db.php');
+require('../../config/config.php');
 
 $subRegion7=$_POST["subRegion7"];
 $views7=$_POST["views7"]; 

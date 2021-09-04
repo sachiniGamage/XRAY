@@ -21,7 +21,7 @@
 	<th> History </th>
   </tr>
         <?php
-            require('../config/db.php');
+            require('../config/config.php');
 			$myInput=$_POST["myInput"]; 
 				 if(isset($_POST['myInput'])){
 					

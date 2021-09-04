@@ -1,5 +1,5 @@
 <?php 
-include('../config/db.php');
+include('../config/config.php');
 include('dashboard2.php');
 ?>
 <link rel = "stylesheet" type="text/css" href="../css/radiographer/viewXRayDetailscss.css">

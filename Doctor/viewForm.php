@@ -4,7 +4,7 @@
 <?php
 $myInput=$_POST["myInput"]; 
 // require('DBConnection.php');
-require('../config/db.php');
+require('../config/config.php');
 
      if(isset($_POST['myInput'])){
         

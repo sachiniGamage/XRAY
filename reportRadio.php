@@ -1,7 +1,7 @@
 <?php
 require('fpdf183/fpdf.php');
-$db = new PDO('mysql:host=localhost:3306;dbname=xrayUnit','phpmyadmin','Root@123');
-$db2 = new PDO('mysql:host=localhost:3306;dbname=xrayUnit','phpmyadmin','Root@123');
+$db = new PDO('mysql:host=sql6.freemysqlhosting.net:3306;dbname=sql6434602','sql6434602','RLvMQHHwhZ');
+$db2 = new PDO('mysql:host=sql6.freemysqlhosting.net:3306;dbname=sql6434602','sql6434602','RLvMQHHwhZ');
 class myPDF extends FPDF{
     
     function header(){

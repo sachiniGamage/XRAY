@@ -16,7 +16,7 @@
         $pat_gender = mysqli_real_escape_string($con, $_POST['pat_gender']);
         $pat_address = mysqli_real_escape_string($con, $_POST['pat_address']);
         $pat_phone = mysqli_real_escape_string($con, $_POST['pat_phone']);
-        $pat_infomation = mysqli_real_escape_string($con, $_POST['pat_infomation']);
+        $pat_information = mysqli_real_escape_string($con, $_POST['pat_information']);
         $pat_email= mysqli_real_escape_string($con, $_POST['pat_email']);
       
         if ($_POST['submit'] == "update") {
@@ -24,7 +24,7 @@
         
             //Insert data
             if ($_SESSION["user"] != null) {
-                $sqlIns = "UPDATE patient SET `pat_fname`='$pat_fname',`pat_lname`='$pat_lname',`pat_age`='$pat_age',`pat_gender`='$pat_gender',`pat_address`='$pat_address',`pat_phone`='$pat_phone',`pat_information`='$pat_infomation', `pat_email`='$pat_email' WHERE `pat_id`='$pat_id'";
+                $sqlIns = "UPDATE patient SET `pat_fname`='$pat_fname',`pat_lname`='$pat_lname',`pat_age`='$pat_age',`pat_gender`='$pat_gender',`pat_address`='$pat_address',`pat_phone`='$pat_phone',`pat_information`='$pat_information', `pat_email`='$pat_email' WHERE `pat_id`='$pat_id'";
                 echo $sqlIns;
                 $result = mysqli_query($con, $sqlIns);
                 // execute insert query
@@ -37,7 +37,7 @@
                 header("Location:../viewPatienttt.php?Error=No_Access");
             }
         } elseif ($_POST['submit'] == "delete") {
-            $sqlIns = "DELETE FROM patient WHERE user_id='$pat_id'";
+            $sqlIns = "DELETE FROM patient WHERE pat_id='$pat_id'";
             echo $sqlIns;
             $result = mysqli_query($con, $sqlIns);
             // execute insert query

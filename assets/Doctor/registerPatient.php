@@ -1,6 +1,6 @@
 <?php
     // require('DBConnection.php');
-    require('../../config/db.php');
+    require('../../config/config.php');
 
 $fname=$_POST["fname"];
 $lname=$_POST["lname"]; 
