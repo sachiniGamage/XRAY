@@ -88,5 +88,5 @@ $pdf ->viewTable2($db);
 $pdf->Ln();
 
 
-$pdf -> Output('myfile.pdf','I');
+$pdf -> Output('myfile.pdf','F');
 ?>
