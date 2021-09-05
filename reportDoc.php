@@ -75,7 +75,7 @@ class myPDF extends FPDF{
 
 $pdf = new myPDF();
 $pdf -> AliasNbPages();
-$pdf -> AddPage('L',A4,0);
+$pdf -> AddPage('L','A4',0);
 $pdf->Ln();
 $pdf->Ln();
 $pdf -> SetFont('Times','',12);
@@ -88,5 +88,5 @@ $pdf ->viewTable2($db);
 $pdf->Ln();
 
 
-$pdf -> Output('myfile.pdf','F');
+$pdf -> Output('myfile.pdf','I');
 ?>
