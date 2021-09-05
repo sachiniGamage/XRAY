@@ -3,7 +3,6 @@ include('../config/config.php');
 include('dashbrd3.php');
 ?>
 
-
 <!DOCTYPE html>
 <html>
 
@@ -22,14 +21,7 @@ include('dashbrd3.php');
 <div class="grid-container">
 <p><input class="w3-input w3-border" type="text" placeholder="Patient ID" name="patID" id="patID" required></p>
 
-
-<!-- <select name="Radiographers" id="Radiographers">
-  <option  value=1>Ms.Nilmi</option>
-  <option value=2>Mr.Chanaka</option>
-  <option value=3>Mr.Kumara</option>
-  <option value=4>Ms.Gamage</option>
-</select> -->
-
+<!-- get radiographer details from db and set it to the drop down -->
 <?php
 if ($result = $con -> query("SELECT `rad_id`,`rad_fname`,`rad_lname` FROM `Radiographer`")) 
   				{
@@ -46,7 +38,7 @@ if ($result = $con -> query("SELECT `rad_id`,`rad_fname`,`rad_lname` FROM `Radio
 			  		
 				}
 ?>
-
+<!-- get Doctor details from db and set it to the drop down -->
 <?php
 if ($result = $con -> query("SELECT `doc_id`,`doc_fname`,`doc_lname` FROM `doctor`")) 
   				{
@@ -64,13 +56,6 @@ if ($result = $con -> query("SELECT `doc_id`,`doc_fname`,`doc_lname` FROM `docto
 				}
 ?>
 
-<!-- <select name="doctor" id="doctor" >
-  <option value=1>Dr. M Silva</option>
-  <option value=2>Dr.S.perera</option>
-  <option value=3>Dr.Thamara Dissanayaka</option>
-  <option value=4>Dr.kumari.De silva</option>
-  <option value=5>Dr.Munasinghe</option>
-</select> -->
   <input type="date" id="tday" name="tday">
 </div>
 <br>
@@ -226,12 +211,7 @@ if ($result = $con -> query("SELECT `doc_id`,`doc_fname`,`doc_lname` FROM `docto
    
 </div>
 </form>
-<!-- <form action="../reportRadio.php" method="post">
-    <p><input class="w3-input w3-border" type="text" placeholder="Patient ID" name="patID" id="patID" >
-
-    <span> <input value = "report" type = "submit" name="genReport"></span></p>
-  </form> -->
-
+<!-- view form -->
 <form action="viewXRayDetails.php" method="post">
   <div class="column" style="background-color:#bbb;">
     <h2>View Details</h2>

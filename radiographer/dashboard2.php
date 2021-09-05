@@ -40,16 +40,6 @@
 
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
-     <!-- PRE LOADER -->
-     <!-- <section class="preloader">
-          <div class="spinner">
-
-               <span class="spinner-rotate"></span>
-
-          </div>
-     </section> -->
-
-
      <!-- HEADER -->
      <header>
           <div class="container">
@@ -101,21 +91,6 @@
 
      </section>
 
-<!-- ------------- -->
-
-
-<!-- <nav class="navbar navbar-inverse visible-xs">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="../img/logo.jpeg">Logo</a>
-    </div>
-  </div>
-</nav> -->
 
 <div class="container-fluid">
   <div class="row content">
@@ -137,26 +112,6 @@
 
     </div>
     <br>
-    
-    <!-- <div class="col-sm-9">
-      <div class="well">
-      <div class="topnav">
-          <a class="active" href="#home">Home</a>
-          <a href="#contact">Contact</a>
-          <div class="search-container">
-          <form action="/action_page.php">
-               <input type="text" placeholder="Search.." name="search">
-               <button type="submit">Search</button>
-          </form>
-     </div>
-     </div>
-    </div> -->
-
-
-
-
-    <!--  -->
-
 
 
 

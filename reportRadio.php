@@ -25,7 +25,7 @@ class myPDF extends FPDF{
         $this -> setFillColor(105,105,108);
         $this -> Cell(20,10,'X-Ray ID',1,0,'','C');
         $this -> Cell(20,10,'Patient ID',1,0,'','C');
-        $this -> Cell(40,10,'Raadiographer',1,0,'','C');
+        $this -> Cell(40,10,'Radiographer',1,0,'','C');
         $this -> Cell(30,10,'Region',1,0,'','C');
         $this -> Cell(40,10,'Sub Region',1,0,'','C');
         $this -> Cell(36,10,'Views',1,0,'','C');
@@ -60,6 +60,7 @@ class myPDF extends FPDF{
     function viewTable2($db2){
         $this -> SetFont('Times','',12);
         $patID=$_POST["patID"];
+        // var_dump($patID);
         // $patID=5;
         $stmt2 = $db2 -> query("SELECT `pat_fname`, `pat_lname`, `pat_age`, `pat_gender`, `pat_phone` FROM `patient` WHERE `pat_id`='".$patID."'");
         while($data2 = $stmt2->fetch(PDO :: FETCH_OBJ)){

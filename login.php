@@ -95,7 +95,7 @@ Avissaweela base hospital radiology department
           </div>
 
      </section>
-     <!-- Register -->
+     <!-- Register Doctor -->
 
     <div class="column">
                     <div class="col-md-5 col-sm-5 form_section">
@@ -131,6 +131,7 @@ Avissaweela base hospital radiology department
                     </div>
 
      </div>
+     <!-- Register Radiographer -->
      <div class="column">
                     <div class="col-md-5 col-sm-5 form_section">
                          <h4 style="margin-bottom:3rem;">Register-Radiographer</h4>
@@ -174,7 +175,7 @@ Avissaweela base hospital radiology department
             document.getElementById("DoctorForm").style.display = "none";
         }
     </script>
-
+<!-- Login Doctor -->
             <div class="column">
                 <div class="form-popup" id="DoctorForm">
                     <div class="col-md-5 col-sm-5 form_section">
@@ -209,7 +210,7 @@ Avissaweela base hospital radiology department
                     document.getElementById("DoctorForm").style.display = "none";
                 }
             </script>
-
+<!-- Login Radiographer -->
             <div class="column">
                 <div class="form-popup" id="DoctorForm">
                     <div class="col-md-5 col-sm-5 form_section">

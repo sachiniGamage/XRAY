@@ -3,12 +3,6 @@
 ?>
 
 
-
-
-
-
-<!-- <link rel = "stylesheet" type="text/css" href="../css/contct.css"> -->
-<!-- <link rel = "stylesheet" type="text/css" href="../css/viewForm.css"> -->
 <link rel = "stylesheet" type="text/css" href="../css/tablecss.css">
 <div class="main">
 	

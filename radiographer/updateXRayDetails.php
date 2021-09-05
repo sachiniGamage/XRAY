@@ -17,14 +17,8 @@ include('dashboard2.php');
     <br>
     <br>
     Radiographer: 
-    <!-- <select name="Radiographers" id="Radiographers">
-        <option  value=1>Ms.Nilmi</option>
-        <option value=2>Mr.Chanaka</option>
-        <option value=3>Mr.Kumara</option>
-        <option value=4>Ms.Gamage</option>
-    </select> -->
 
-
+    <!-- get radiographer details from db and set it to the drop down -->
     <?php
 if ($result = $con -> query("SELECT `rad_id`,`rad_fname`,`rad_lname` FROM `Radiographer`")) 
   				{
@@ -44,6 +38,8 @@ if ($result = $con -> query("SELECT `rad_id`,`rad_fname`,`rad_lname` FROM `Radio
 
 <br>
 <br>
+
+<!-- get Doctor details from db and set it to the drop down -->
  Doctor:
 <?php
 if ($result = $con -> query("SELECT `doc_id`,`doc_fname`,`doc_lname` FROM `doctor`")) 
@@ -67,14 +63,6 @@ if ($result = $con -> query("SELECT `doc_id`,`doc_fname`,`doc_lname` FROM `docto
     <br>
     <br>
 
-    <!-- Doctor:  -->
-    <!-- <select name="doctor" id="doctor" >
-        <option value=1>Dr. M Silva</option>
-        <option value=2>Dr.S.perera</option>
-        <option value=3>Dr.Thamara Dissanayaka</option>
-        <option value=4>Dr.kumari.De silva</option>
-        <option value=5>Dr.Munasinghe</option>
-        </select></p> -->
 
     <div class="grid-container">
     <p><select name="Region" id="Region">
