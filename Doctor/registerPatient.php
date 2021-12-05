@@ -135,7 +135,6 @@
       }
       else
       {
-        // event.preventDefault();
         alert("Registration is failed");
         return false;
       }
@@ -177,104 +176,104 @@
     
     
 
- <form class="well form-horizontal" onSubmit="return validateForm()" action="../assets/Doctor/registerPatient.php"  method="post"  id="contact_form">
-    <fieldset>
+  <form class="well form-horizontal" onSubmit="return validateForm()" action="../assets/Doctor/registerPatient.php"  method="post"  id="contact_form">
+      <fieldset>
 
-<!-- Form Name -->
-    <legend><center><h2><b>Patient-Register</b></h2></center></legend><br>
+  <!-- Form Name -->
+      <legend><center><h2><b>Patient-Register</b></h2></center></legend><br>
 
-<!-- Text input-->
+    <!-- Text input-->
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">First Name</label>  
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input  name="fname" placeholder="First Name" class="form-control"  type="text" required>
+            </div>
+          </div>
+        </div>
+
+    <!-- Text input-->
 
     <div class="form-group">
-      <label class="col-md-4 control-label">First Name</label>  
+      <label class="col-md-4 control-label" >Last Name</label> 
       <div class="col-md-4 inputGroupContainer">
         <div class="input-group">
           <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-        <input  name="fname" placeholder="First Name" class="form-control"  type="text" required>
+          <input name="lname" placeholder="Last Name" class="form-control"  type="text" required>
         </div>
       </div>
     </div>
 
-<!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" >Age</label> 
+      <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input name="age" placeholder="Age" class="form-control"  type="number" required>
+        </div>
+      </div>
+    </div>
 
-<div class="form-group">
-<label class="col-md-4 control-label" >Last Name</label> 
-<div class="col-md-4 inputGroupContainer">
-<div class="input-group">
-<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-<input name="lname" placeholder="Last Name" class="form-control"  type="text" required>
-</div>
-</div>
-</div>
+    <div class="form-group">
+      <label class="col-md-4 control-label" >Gender</label> 
+      <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input type="radio" class="genderClass" name="gender" value="female">Female
+          <input type="radio" class="genderClass" name="gender" value="male">Male
+        </div>
+      </div>
+    </div>
 
-<div class="form-group">
-<label class="col-md-4 control-label" >Age</label> 
-<div class="col-md-4 inputGroupContainer">
-<div class="input-group">
-<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-<input name="age" placeholder="Age" class="form-control"  type="number" required>
-</div>
-</div>
-</div>
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label">Address</label>  
+      <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+            <input name="address" placeholder="Address" class="form-control"  type="text" required>
+        </div>
+      </div>
+    </div>
 
-<div class="form-group">
-<label class="col-md-4 control-label" >Gender</label> 
-<div class="col-md-4 inputGroupContainer">
-<div class="input-group">
-<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-<input type="radio" class="genderClass" name="gender" value="female">Female
-<input type="radio" class="genderClass" name="gender" value="male">Male
-</div>
-</div>
-</div>
+    <!-- Text input-->
+      
+    <div class="form-group">
+      <label class="col-md-4 control-label">Contact No.</label>  
+      <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+            <input name="phone" placeholder="(+94)" class="form-control" type="tel" required>
+        </div>
+      </div>
+    </div>
 
-<!-- Text input-->
-<div class="form-group">
-<label class="col-md-4 control-label">Address</label>  
-<div class="col-md-4 inputGroupContainer">
-<div class="input-group">
-    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-<input name="address" placeholder="Address" class="form-control"  type="text" required>
-</div>
-</div>
-</div>
-
-<!-- Text input-->
-   
-<div class="form-group">
-<label class="col-md-4 control-label">Contact No.</label>  
-<div class="col-md-4 inputGroupContainer">
-<div class="input-group">
-    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-<input name="phone" placeholder="(+94)" class="form-control" type="tel" required>
-</div>
-</div>
-</div>
-
-<!-- Text input-->
-   
-<div class="form-group">
-<label class="col-md-4 control-label">Email </label>  
-<div class="col-md-4 inputGroupContainer">
-<div class="input-group">
-    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-<input name="email" placeholder="Email" class="form-control" type="email" required>
-</div>
-</div>
-</div>
+    <!-- Text input-->
+      
+    <div class="form-group">
+      <label class="col-md-4 control-label">Email </label>  
+      <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+          <input name="email" placeholder="Email" class="form-control" type="email" required>
+        </div>
+      </div>
+    </div>
 
 
-<!-- Button -->
-<div class="form-group">
-<label class="col-md-4 control-label"></label>
-<div class="col-md-4"><br>
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" class="btn btn-warning" name="submitt" id="submitt" style="background: #2D3179; color:white;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span ><style>button{background: #1176be;}</style></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
-</div>
-</div>
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label"></label>
+      <div class="col-md-4"><br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" class="btn btn-warning" name="submitt" id="submitt" style="background: #2D3179; color:white;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span ><style>button{background: #1176be;}</style></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+      </div>
+    </div>
 
-</fieldset>
-</form>
-</div>
+    </fieldset>
+    </form>
+  </div>
 </div> 
 </body>
 </html>

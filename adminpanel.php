@@ -45,12 +45,9 @@ Avissaweela base hospital radiology department
      <!-- PRE LOADER -->
      <section class="preloader">
           <div class="spinner">
-
                <span class="spinner-rotate"></span>
-
           </div>
      </section>
-
 
      <!-- HEADER -->
      <header>
@@ -68,7 +65,6 @@ Avissaweela base hospital radiology department
                          <span class="email-icon"><i class="fa fa-envelope-o"></i> <a
                                    href="#">radiologyavissawella@gmail.com</a></span>
                     </div>
-
                </div>
           </div>
      </header>
@@ -99,66 +95,34 @@ Avissaweela base hospital radiology department
                          <li><a href="./assets/logoutPHP.php">Logout</a></li>
                     </ul>
                </div>
-
           </div>
-
      </section>
 
-<!-- ------------- -->
-
-
-<!-- <nav class="navbar navbar-inverse visible-xs">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="../img/logo.jpeg">Logo</a>
-    </div>
-  </div>
-</nav> -->
 <br>
 
-<div class="container-fluid">
-  <div class="row content">
-    <div class="col-sm-3 sidenav hidden-xs">
-        <ul class="nav nav-pills nav-stacked">
-      <li class="active"><a href="#">Dashboard</a></li>
-      <li><a href="admin_regDoc.php">Add Doctor</a></li>
-      <li><a href="admin_regPatient.php">Add Patient</a></li>
-      <li><a href="admin_regRad.php">Add Radiographer</a></li>
-        <li><a href="admin_viewDoctor.php">View Doctor</a></li>
-        <li><a href="admin_viewPatient.php">View Patient</a></li>
-        <li><a href="admin_viewRad.php">View Radiographer</a></li>
-        <li><a href="admin_viewappoint.php">View Appointments</a></li>
-        
-        <br><br><br><br><br>
-        <li><a href="assets/logoutPHP.php">Logout</a></li>
-      </ul><br>
+     <div class="container-fluid">
+     <div class="row content">
+     <div class="col-sm-3 sidenav hidden-xs">
+          <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="#">Dashboard</a></li>
+          <li><a href="admin_regDoc.php">Add Doctor</a></li>
+          <li><a href="admin_regPatient.php">Add Patient</a></li>
+          <li><a href="admin_regRad.php">Add Radiographer</a></li>
+          <li><a href="admin_viewDoctor.php">View Doctor</a></li>
+          <li><a href="admin_viewPatient.php">View Patient</a></li>
+          <li><a href="admin_viewRad.php">View Radiographer</a></li>
+          <li><a href="admin_viewappoint.php">View Appointments</a></li>
+          
+          <br><br><br><br><br>
+          <li><a href="assets/logoutPHP.php">Logout</a></li>
+          </ul><br>
 
-    </div>
-    <br>
+     </div>
+     <br>
     <body>
-      
        <img src="img/logo.jpeg" alt="logo">
-
     </body>
-    
-    <!-- <div class="col-sm-9">
-      <div class="well">
-      <div class="topnav">
-          <a class="active" href="#home">Home</a>
-          <a href="#contact">Contact</a>
-          <div class="search-container">
-          <form action="/action_page.php">
-               <input type="text" placeholder="Search.." name="search">
-               <button type="submit">Search</button>
-          </form>
-     </div>
-     </div>
-    </div> -->
+   
    
      <!-- SCRIPTS -->
      <script src="js/jquery.js"></script>

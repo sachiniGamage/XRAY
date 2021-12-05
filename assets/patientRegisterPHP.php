@@ -17,10 +17,6 @@
         $pat_infomation = mysqli_real_escape_string($con, $_POST['pat_infomation']);
         $pat_email= mysqli_real_escape_string($con, $_POST['pat_email']);
       
-            
-        //convert date
-     
-
         //Insert data
         if ($_SESSION["user"] != null) {
             $uid = $_SESSION["user"];

@@ -8,61 +8,54 @@ include('dashboard2.php');
   <divstyle="background-color:#bbb;">
     <h2>Update Details</h2>
     <div >
-    
-    
-    XRay ID: <input class="w3-input w3-border" type="text" placeholder="Xray ID" name="xrayID" required>
-    <br>
-    <br>
-    Patient ID: <input class="w3-input w3-border" type="text" placeholder="Patient ID" name="patID" required>
-    <br>
-    <br>
-    Radiographer: 
+      XRay ID: <input class="w3-input w3-border" type="text" placeholder="Xray ID" name="xrayID" required>
+      <br>
+      <br>
+      Patient ID: <input class="w3-input w3-border" type="text" placeholder="Patient ID" name="patID" required>
+      <br>
+      <br>
+      Radiographer: 
 
     <!-- get radiographer details from db and set it to the drop down -->
     <?php
-if ($result = $con -> query("SELECT `rad_id`,`rad_fname`,`rad_lname` FROM `Radiographer`")) 
-  				{
-            ?>
-            <select name="Radiographers" id="Radiographers">
-              <?php
-              
-				while($row = mysqli_fetch_array($result)) 
-				{
-					echo '<option value = "'. $row["rad_id"] .'">' . $row["rad_fname"] . " " . $row["rad_lname"] . '</option>';
-				}
+    if ($result = $con -> query("SELECT `rad_id`,`rad_fname`,`rad_lname` FROM `Radiographer`")) 
+    {
+    ?>
+      <select name="Radiographers" id="Radiographers">
+        <?php
+                  
+        while($row = mysqli_fetch_array($result)) 
+        {
+          echo '<option value = "'. $row["rad_id"] .'">' . $row["rad_fname"] . " " . $row["rad_lname"] . '</option>';
+        }
         ?>
-			</select><?php
-			  		
-				}
-?>
+        </select><?php
+                
+    }
+    ?>
 
-<br>
-<br>
+    <br>
+    <br>
 
-<!-- get Doctor details from db and set it to the drop down -->
- Doctor:
-<?php
-if ($result = $con -> query("SELECT `doc_id`,`doc_fname`,`doc_lname` FROM `doctor`")) 
-  				{
-            ?>
-            <select name="doctor" id="doctor">
-              <?php
-				while($row = mysqli_fetch_array($result)) 
-				{
-					echo '<option value = "'. $row["doc_id"] .'">'  . $row["doc_fname"] . " " . $row["doc_lname"] . '</option>';
+    <!-- get Doctor details from db and set it to the drop down -->
+    Doctor:
+    <?php
+    if ($result = $con -> query("SELECT `doc_id`,`doc_fname`,`doc_lname` FROM `doctor`")) 
+    {
+      ?>
+      <select name="doctor" id="doctor">
+        <?php
+        while($row = mysqli_fetch_array($result)) 
+        {
+          echo '<option value = "'. $row["doc_id"] .'">'  . $row["doc_fname"] . " " . $row["doc_lname"] . '</option>';
           var_dump($row);
         }
         ?>
-			</select><?php
-			  		
-				}
-?>
-
-
-
+      </select><?php
+    }
+    ?>
     <br>
     <br>
-
 
     <div class="grid-container">
     <p><select name="Region" id="Region">
@@ -131,9 +124,9 @@ if ($result = $con -> query("SELECT `doc_id`,`doc_fname`,`doc_lname` FROM `docto
     </div>
 
     <div class="form-group">
-    <label class="col-md-4 control-label"></label>
-    <div class="col-md-4"><br>
-    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" class="btn btn-warning" value="Update" name="updt" id="updt" style="background: #2D3179; color:white;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
-    </div>
-    </div>
-    <form>
+      <label class="col-md-4 control-label"></label>
+      <div class="col-md-4"><br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" class="btn btn-warning" value="Update" name="updt" id="updt" style="background: #2D3179; color:white;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+      </div>
+  </div>
+<form>

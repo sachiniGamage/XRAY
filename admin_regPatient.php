@@ -21,7 +21,7 @@
      <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
     
      
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+     <link rel="stylesheet" type="text/css" href="css/style.css"/>
      <link rel="stylesheet" type="text/css" href="css/tooplate-style.css">
 
 
@@ -29,9 +29,7 @@
 <body class="form-v10">
 	<header>
           <div class="container">
-
                <div class="row">
-
                     <div class="col-md-4 col-sm-5">
                          <p>Welcome to Radiology Department</p>
                     </div>
@@ -67,127 +65,121 @@
                          <li><a href="index.php" class="smoothScroll">Home</a></li>
                          <li><a href="#about" class="smoothScroll">About Us</a></li>
                          <li><a href="#team" class="smoothScroll">Doctors</a></li>
-                          <li><a href="adminpanel.php" class="smoothScroll">Admin</a></li>
+                         <li><a href="adminpanel.php" class="smoothScroll">Admin</a></li>
                          <li><a href="patientRegister.php" class="smoothScroll">Patient</a></li>
                          <li><a href="#news" class="smoothScroll">News</a></li>
                          <li><a href="#google-map" class="smoothScroll">Contact Us</a></li>
 
-
-
-
 	<div class="page-content">
-
 
 		<div class="form-v10-content">
 		<form class="well form-horizontal" action="assets/admin/adminpat_regPHP.php" method="post"  id="contact_form">
-<fieldset>
 
-<!-- Form Name -->
-<legend><center><h3><b>Patient Register Details</b></h3></center></legend><br>
+          <fieldset>
 
-<!-- Text input-->
+          <!-- Form Name -->
+          <legend><center><h3><b>Patient Register Details</b></h3></center></legend><br>
 
+          <!-- Text input-->
 
-<div class="form-group">
-<label class="col-md-4 control-label">First Name</label>  
-<div class="col-md-4 inputGroupContainer">
-<div class="input-group">
-<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-<input  name="pat_fname" placeholder="First Name" class="form-control"  type="text" required>
-</div>
-</div>
-</div>
+          <div class="form-group">
+               <label class="col-md-4 control-label">First Name</label>  
+               <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                         <input  name="pat_fname" placeholder="First Name" class="form-control"  type="text" required>
+                    </div>
+               </div>
+          </div>
 
-<!-- Text input-->
+          <!-- Text input-->
 
-<div class="form-group">
-<label class="col-md-4 control-label" >Last Name</label> 
-<div class="col-md-4 inputGroupContainer">
-<div class="input-group">
-<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-<input name="pat_lname" placeholder="Last Name" class="form-control"  type="text" required>
-</div>
-</div>
-</div>
+          <div class="form-group">
+               <label class="col-md-4 control-label" >Last Name</label> 
+               <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                         <input name="pat_lname" placeholder="Last Name" class="form-control"  type="text" required>
+                    </div>
+               </div>
+          </div>
 
-<div class="form-group">
-<label class="col-md-4 control-label" >Age</label> 
-<div class="col-md-4 inputGroupContainer">
-<div class="input-group">
-<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-<input name="pat_age" placeholder="Age" class="form-control"  type="text" required>
-</div>
-</div>
-</div>
+          <div class="form-group">
+               <label class="col-md-4 control-label" >Age</label> 
+               <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                         <input name="pat_age" placeholder="Age" class="form-control"  type="text" required>
+                    </div>
+               </div>
+          </div>
 
-<div class="form-group">
-<label class="col-md-4 control-label" >Gender</label> 
-<div class="col-md-4 inputGroupContainer">
-<div class="input-group">
-<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-<input name="pat_gender" placeholder="Gender" class="form-control"  type="text" required>
-</div>
-</div>
-</div>
-   
-<div class="form-group">
-<label class="col-md-4 control-label">Address</label>  
-<div class="col-md-4 inputGroupContainer">
-<div class="input-group">
-    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-<input name="pat_address" placeholder="Address" class="form-control" type="text" required>
-</div>
-</div>
-</div>
+          <div class="form-group">
+               <label class="col-md-4 control-label" >Gender</label> 
+               <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                         <input name="pat_gender" placeholder="Gender" class="form-control"  type="text" required>
+                    </div>
+               </div>
+          </div>
+          
+          <div class="form-group">
+               <label class="col-md-4 control-label">Address</label>  
+               <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                         <input name="pat_address" placeholder="Address" class="form-control" type="text" required>
+                    </div>
+               </div>
+          </div>
 
-<!-- Text input-->
-   
-<div class="form-group">
-<label class="col-md-4 control-label">Contact No.</label>  
-<div class="col-md-4 inputGroupContainer">
-<div class="input-group">
-    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-<input name="pat_phone" placeholder="(+94)" class="form-control" type="tel" required>
-</div>
-</div>
-</div>
+          <!-- Text input-->
+          
+          <div class="form-group">
+               <label class="col-md-4 control-label">Contact No.</label>  
+               <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                         <input name="pat_phone" placeholder="(+94)" class="form-control" type="tel" required>
+                    </div>
+               </div>
+          </div>
 
-<div class="form-group">
-<label class="col-md-4 control-label">Information</label>  
-<div class="col-md-4 inputGroupContainer">
-<div class="input-group">
-    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-<input name="pat_infomation" placeholder="Information" class="form-control" type="text" required>
-</div>
-</div>
-</div>
-
-
-<!-- Text input-->
-   <div class="form-group">
-<label class="col-md-4 control-label">E-Mail</label>  
-<div class="col-md-4 inputGroupContainer">
-<div class="input-group">
-    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-<input name="pat_email" placeholder="E-Mail Address" class="form-control"  type="email" required>
-</div>
-</div>
-</div>
+          <div class="form-group">
+               <label class="col-md-4 control-label">Information</label>  
+               <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                         <input name="pat_infomation" placeholder="Information" class="form-control" type="text" required>
+                    </div>
+               </div>
+          </div>
 
 
+          <!-- Text input-->
+          <div class="form-group">
+               <label class="col-md-4 control-label">E-Mail</label>  
+               <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                         <input name="pat_email" placeholder="E-Mail Address" class="form-control"  type="email" required>
+                    </div>
+               </div>
+          </div>
 
-<!-- Button -->
-<div class="form-group">
-<label class="col-md-4 control-label"></label>
-<div class="col-md-4"><br>
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" name = "submit" class="btn btn-warning" style="background: #2D3179; color:white;" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
-</div>
-</div>
+          <!-- Button -->
+          <div class="form-group">
+               <label class="col-md-4 control-label"></label>
+               <div class="col-md-4"><br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" name = "submit" class="btn btn-warning" style="background: #2D3179; color:white;" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+               </div>
+          </div>
 
-</fieldset>
-</form>
+          </fieldset>
+          </form>
 		</div>
 	</div>
-	>
+	
 </body>
 </html>

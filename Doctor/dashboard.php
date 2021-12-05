@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-
      <title>XrayUnit</title>
-
      <meta charset="UTF-8">
      
      <meta charset="UTF-8">
@@ -20,24 +17,17 @@
      <link rel = "stylesheet" type="text/css" href="../css/registerForm.css">
      <link rel = "stylesheet" type="text/css" href="../css/viewXRayDetailscss.css">
      <link rel="stylesheet" href="../css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel = "stylesheet" type="text/css" href="../css/radiographer/dashboard2.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <link rel = "stylesheet" type="text/css" href="../css/radiographer/dashboard2.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
      <!-- MAIN CSS -->
      <link rel="stylesheet" type="text/css" href="../css/tooplate-style.css">
 </head>
 <body>
-
-
-<!-- --------------- -->
-
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
-
 
      <!-- HEADER -->
      <header>
@@ -82,7 +72,6 @@
                          <li><a href="viewPatient.php" class="smoothScroll">Home</a></li>
                          <li><a href="../#about" class="smoothScroll">About Us</a></li>
                          <li><a href="../#google-map" class="smoothScroll">Contact Us</a></li>
-                         <!-- <li><a href="../assets/logoutPHP.php">Logout</a></li> -->
                     </ul>
                </div>
 
@@ -91,26 +80,23 @@
      </section>
 
 
-<div class="container-fluid">
-  <div class="row content">
-    <div class="col-sm-3 sidenav hidden-xs">
-    <img src="../img/logo.jpeg" alt="logo">
-      <ul class="nav nav-pills nav-stacked">
-      <li class="active"><a href="#">Dashboard</a></li>
-      <li><a href="registerDoctor.php">Register Doctor</a></li>
-        <li><a href="viewDoctors.php">View Doctor</a></li>
-        <li><a href="viewPatient.php">View Patient</a></li>
-        <li><a href="registerPatient.php">Add Patient</a></li>
-        <li><a href="viewAppointment.php">View Appointments</a></li>
-        <li><a href="viewHistory.php">View History</a></li>
-        <br><br><br><br><br>
-        <li><a href="../assets/logout.php">Logout</a></li>
-      </ul><br>
-
-    </div>
-    <br>
-    
-
-
-    
+     <div class="container-fluid">
+          <div class="row content">
+               <div class="col-sm-3 sidenav hidden-xs">
+                    <img src="../img/logo.jpeg" alt="logo">
+                         <ul class="nav nav-pills nav-stacked">
+                         <li class="active"><a href="#">Dashboard</a></li>
+                         <li><a href="registerDoctor.php">Register Doctor</a></li>
+                         <li><a href="viewDoctors.php">View Doctor</a></li>
+                         <li><a href="viewPatient.php">View Patient</a></li>
+                         <li><a href="registerPatient.php">Add Patient</a></li>
+                         <li><a href="viewAppointment.php">View Appointments</a></li>
+                         <li><a href="viewHistory.php">View History</a></li>
+                         <br><br><br><br><br>
+                         <li><a href="../assets/logout.php">Logout</a></li>
+                         </ul><br>
+               </div>
+          </div>
+     </div>
+     <br>
 </body>

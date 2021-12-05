@@ -2,7 +2,6 @@
 require('fpdf183/fpdf.php');
 session_start();
      include 'config/config.php';
-//db connection
 ?>
 
 <html>

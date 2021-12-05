@@ -1,5 +1,4 @@
 <?php
-    // require('DBConnection.php');
     require('../../config/config.php');
 
 $fname=$_POST["fname"];
@@ -13,19 +12,12 @@ $email=$_POST["email"];
     // When form submitted, insert values into the database.
     if (isset($_POST['submitt'])) {
         // removes backslashes
-        // $fname = stripslashes($_POST['fname']);
-        //escapes special characters in a string
         $fname = mysqli_real_escape_string($con, $fname);
-        // $lname = stripslashes($_POST['lname']);
         $lname = mysqli_real_escape_string($con, $lname);
-        // $age    = stripslashes($_POST['age']);
         $age    = mysqli_real_escape_string($con, $age);
-        // $gender = stripslashes($_POST['gender']);
         $gender = mysqli_real_escape_string($con, $gender);
-        // $address = stripslashes($_POST['address']);
         //escapes special characters in a string
         $address = mysqli_real_escape_string($con, $address);
-        // $phone = stripslashes($_POST['phone']);
         //escapes special characters in a string
         $phone = mysqli_real_escape_string($con, $phone);
         $email = mysqli_real_escape_string($con, $email);

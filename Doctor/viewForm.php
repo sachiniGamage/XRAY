@@ -3,7 +3,6 @@
 ?>
 <?php
 $myInput=$_POST["myInput"]; 
-// require('DBConnection.php');
 require('../config/config.php');
 
      if(isset($_POST['myInput'])){
@@ -33,7 +32,6 @@ require('../config/config.php');
 				<div> <h5>Patient Gender :  '.$pat_gender.' </h5> </div> <div> <h5>Patient Address :  '.$pat_address.' </h5> </div>
 				<div> <h5>Patient Phone :  '.$pat_phone.' </h5> </div>';		
 			}
-			
 			
         }else{
             $output = 'There was no search result';

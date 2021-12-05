@@ -35,9 +35,6 @@
 </head>
 <body>
 
-
-<!-- --------------- -->
-
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
      <!-- HEADER -->
@@ -83,38 +80,31 @@
                          <li><a href="viewQuery.php" class="smoothScroll">Home</a></li>
                          <li><a href="../#about" class="smoothScroll">About Us</a></li>
                          <li><a href="../#google-map" class="smoothScroll">Contact Us</a></li>
-                         <!-- <li><a href="../assets/logoutPHP.php">Logout</a></li> -->
                     </ul>
                </div>
-
           </div>
 
      </section>
 
 
-<div class="container-fluid">
-  <div class="row content">
-    <div class="col-sm-3 sidenav hidden-xs">
-    <img src="../img/logo.jpeg" alt="logo">
-      <ul class="nav nav-pills nav-stacked">
-      <li class="active"><a href="#">Dashboard</a></li>
-        <li><a href="registerRadio.php">Register Radiographer</a></li>
-        <li><a href="viewRadiographer.php">View Radiographer</a></li>
-        <li><a href="viewPatient.php">View Patient</a></li>
-        <li><a href="viewQuery.php">Patient Query</a></li>
-        <!-- <li><a href="registerPatient.php">xray item</a></li> -->
-        <li><a href="viewXRayDetails.php">XrayDetail</a></li>
-        <li><a href="updateXRayDetails.php">Update XrayDetail</a></li>
-        
-        <br><br><br><br><br>
-        <li><a href="../assets/logout.php">Logout</a></li>
-      </ul><br>
+     <div class="container-fluid">
+          <div class="row content">
+               <div class="col-sm-3 sidenav hidden-xs">
+                    <img src="../img/logo.jpeg" alt="logo">
+                         <ul class="nav nav-pills nav-stacked">
+                              <li class="active"><a href="#">Dashboard</a></li>
+                              <li><a href="registerRadio.php">Register Radiographer</a></li>
+                              <li><a href="viewRadiographer.php">View Radiographer</a></li>
+                              <li><a href="viewPatient.php">View Patient</a></li>
+                              <li><a href="viewQuery.php">Patient Query</a></li>
+                              <li><a href="viewXRayDetails.php">XrayDetail</a></li>
+                              <li><a href="updateXRayDetails.php">Update XrayDetail</a></li>
+                         
+                              <br><br><br><br><br>
+                              <li><a href="../assets/logout.php">Logout</a></li>
+                         </ul><br>
 
-    </div>
-    <br>
+     </div>
+     <br>
 
-
-
-    
-    
 </body>

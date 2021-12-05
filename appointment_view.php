@@ -37,9 +37,7 @@ Avissaweela base hospital radiology department
      <!-- PRE LOADER -->
      <section class="preloader">
           <div class="spinner">
-
                <span class="spinner-rotate"></span>
-
           </div>
      </section>
 
@@ -96,17 +94,8 @@ Avissaweela base hospital radiology department
      <!-- MAKE AN APPOINTMENT -->
      <?php
      $uid = $_SESSION["user"];
-     // $uid = 1;
      $sqlIns = "SELECT * FROM `appointment` WHERE `app_patid`='$uid'";
-     
-
-     // $sqlIns = "SELECT `app_id`, `app_patfname`, `app_patlname`, `app_date`, `app_time`, `app_type`, `app_phone`, `app_details` FROM `appointment` WHERE `app_patid`='".$uid."'";
-
      $result = mysqli_query($con, $sqlIns);
-     // echo "abc";
-     // $num_rows2 = mysqli_num_rows($result);
-     // echo $num_rows2;
-     // var_dump($result);
       ?>
      <script>
           var obj = [];
@@ -124,7 +113,6 @@ Avissaweela base hospital radiology department
                if ($num_rows > 0) {
                    while ($data = mysqli_fetch_array($result)) {
                        $current_ind += 1;
-                       //$current_app_id = $data["app_id"];
                        $current_app_patfname = $data["app_patfname"];
                        $current_app_type = $data["app_type"]; ?>
                        <?php echo "num rows > 0" ?>

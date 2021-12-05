@@ -3,9 +3,6 @@ session_start();
 
     //DB connection
     require '../../config/config.php';
-
-   
-
     $admin_email=$_POST["admin_email"];
     $admin_pass=$_POST["admin_pass"]; 
     $admin_conpass=$_POST["admin_conpass"]; 

@@ -15,13 +15,7 @@
         
         $email= mysqli_real_escape_string($con, $_POST['email']);
       
-            
-        //convert date
-     
-
         //Insert data
-       
-
         $sqlIns = "INSERT INTO Radiographer (rad_fname,rad_lname,phone,email) VALUES ('$rad_fname','$rad_lname','$phone','email')";
 
         $result = mysqli_query($con, $sqlIns);

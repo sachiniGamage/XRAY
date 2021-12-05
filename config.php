@@ -5,5 +5,4 @@ $con = mysqli_connect("sql6.freemysqlhosting.net","sql6434602","RLvMQHHwhZ","sql
 	 {
 		 die("Cannot connect to DB server");
 	 }
-	//  echo("connected");
 ?>

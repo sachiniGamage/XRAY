@@ -7,21 +7,15 @@ require('../config/config.php');
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-
      <title>XrayUnit</title>
-
      <meta charset="UTF-8">
-     
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <link rel = "stylesheet" type="text/css" href="../css/radiographer/dashboard2.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel = "stylesheet" type="text/css" href="../css/radiographer/dashboard2.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
      <meta name="description" content="">
      <meta name="keywords" content="">
      <meta name="author" content="Tooplate">
@@ -40,9 +34,6 @@ require('../config/config.php');
 </head>
 
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
-
-     
-
 
      <!-- HEADER -->
      <header>
@@ -87,7 +78,6 @@ require('../config/config.php');
                          <li><a href="viewQuery.php" class="smoothScroll">Home</a></li>
                          <li><a href="../#about" class="smoothScroll">About Us</a></li>
                          <li><a href="../#google-map" class="smoothScroll">Contact Us</a></li>
-                         <!-- <li><a href="login.php">Login</a></li> -->
                     </ul>
                </div>
 
@@ -99,52 +89,51 @@ require('../config/config.php');
 </head>
 <body>
 
-<nav class="navbar navbar-inverse visible-xs">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="../img/logo.jpeg">Logo</a>
-    </div>
-  </div>
-</nav>
+     <nav class="navbar navbar-inverse visible-xs">
+     <div class="container-fluid">
+     <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="../img/logo.jpeg">Logo</a>
+     </div>
+     </div>
+     </nav>
 
-<div class="container-fluid">
-  <div class="row content">
-    <div class="col-sm-3 sidenav hidden-xs">
-    <img src="../img/logo.jpeg" alt="logo">
-      <ul class="nav nav-pills nav-stacked">
-      <li class="active"><a href="#">Dashboard</a></li>
-        <li><a href="registerRadio.php">Register Radiographer</a></li>
-        <li><a href="viewRadiographer.php">View Radiographer</a></li>
-        <li><a href="viewPatient.php">View Patient</a></li>
-        <li><a href="viewQuery.php">Patient Query</a></li>
-        <!-- <li><a href="registerPatient.php">xray item</a></li> -->
-        <li><a href="viewXRayDetails.php">XrayDetail</a></li>
-        <li><a href="updateXRayDetails.php">Update XrayDetail</a></li>
-        
-        <br><br><br><br><br>
-        <li><a href="../assets/logout.php">Logout</a></li>
-      </ul><br>
-
-    </div>
-    <br>
+     <div class="container-fluid">
+          <div class="row content">
+               <div class="col-sm-3 sidenav hidden-xs">
+                    <img src="../img/logo.jpeg" alt="logo">
+                         <ul class="nav nav-pills nav-stacked">
+                              <li class="active"><a href="#">Dashboard</a></li>
+                              <li><a href="registerRadio.php">Register Radiographer</a></li>
+                              <li><a href="viewRadiographer.php">View Radiographer</a></li>
+                              <li><a href="viewPatient.php">View Patient</a></li>
+                              <li><a href="viewQuery.php">Patient Query</a></li>
+                              <!-- <li><a href="registerPatient.php">xray item</a></li> -->
+                              <li><a href="viewXRayDetails.php">XrayDetail</a></li>
+                              <li><a href="updateXRayDetails.php">Update XrayDetail</a></li>
+                              
+                              <br><br><br><br><br>
+                              <li><a href="../assets/logout.php">Logout</a></li>
+                         </ul><br>
+               </div>
+          </div>
+     </div>
+     <br>
     
     <div class="col-sm-9">
-      <div class="well">
-      <div class="topnav">
-          <a class="active" href="viewQuery.php">Home</a>
-          <a href="../#google-map">Contact</a>
-          <div class="search-container">
-          <form action="/action_page.php">
-               <!-- <input type="text" placeholder="Search.." name="search">
-               <button type="submit">Search</button> -->
-          </form>
-     </div>
-     </div>
+          <div class="well">
+               <div class="topnav">
+                    <a class="active" href="viewQuery.php">Home</a>
+                    <a href="../#google-map">Contact</a>
+                    <div class="search-container">
+                    <form action="/action_page.php">
+                    </form>
+               </div>
+          </div>
     </div>
 
     

@@ -6,9 +6,6 @@
 
      $result = mysqli_query($con, $query);
 
-
-  
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -28,7 +25,7 @@
      <link rel="stylesheet" href="css/owl.theme.default.min.css">
     
      
-    <link rel="stylesheet" href="css/style.css"/>
+     <link rel="stylesheet" href="css/style.css"/>
      <link rel="stylesheet" href="css/tooplate-style.css">
 
 </head>
@@ -77,101 +74,91 @@
                          <li><a href="#news" class="smoothScroll">News</a></li>
                          <li><a href="#gggg" class="smoothScroll">Contact Us</a></li>
  
-               
+               <div class="form-v10-content">
+                              <form class="form-detail" action="" method="post" >
+                                   <div class="form-left">
+                                        <h2>Patient Infomation</h2>
+                                        <div class="form-row">
+
+     <body>
+          <link rel = "stylesheet" type="text/css" href="../css/tablecss.css">
+          <style>
+               #button {
+                    background-color: #38ade8; /* Green */
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+               }
+               #customers {
+                    font-family: Arial, Helvetica, sans-serif;
+                    border-collapse: collapse;
+                    width: 100%;
+               }
+
+               #customers td, #customers th {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+               }
+
+               #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+               #customers tr:hover {background-color: #ddd;}
+
+               #customers th {
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                    text-align: left;
+                    background-color: #38ade8;
+                    color: white;
+               }
+          </style>
+          <a href="adminpatInvoice.php" id="button" class="button">Print PDF</a>
+          <br>
+          <table id="customers">
+               <tr>
+               </tr>
+               <t><br>
+                    <th>ID</th>
+                    <th>First Name </th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+
+               </t>
+          <?php
 
 
+          while($rows=mysqli_fetch_assoc($result))
+          {
+          ?>
+          <tr>
+               <td><?php echo $rows['pat_id']?></td>
+               <td><?php echo $rows['pat_fname']?></td>
+               <td><?php echo $rows['pat_lname']?></td>
+               <td><?php echo $rows['pat_age']?></td>
+               <td><?php echo $rows['pat_gender']?></td>
+               <td><?php echo $rows['pat_address']?></td>
+               <td><?php echo $rows['pat_phone']?></td>
+               <td><?php echo $rows['pat_email']?></td>
+          </tr>
+          <?php
 
-
-<div class="form-v10-content">
-               <form class="form-detail" action="" method="post" >
-                    <div class="form-left">
-                         <h2>Patient Infomation</h2>
-                         <div class="form-row">
-
-<body>
-     <link rel = "stylesheet" type="text/css" href="../css/tablecss.css">
-<style>
-    #button {
-  background-color: #38ade8; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-#customers {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-#customers td, #customers th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-#customers tr:nth-child(even){background-color: #f2f2f2;}
-
-#customers tr:hover {background-color: #ddd;}
-
-#customers th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #38ade8;
-  color: white;
-}
-</style>
-  <a href="adminpatInvoice.php" id="button" class="button">Print PDF</a>
-<br>
-<table id="customers">
-<tr>
-     
-
-</tr>
-<t><br>
-<th>ID</th>
-<th>First Name </th>
-<th>Last Name</th>
-<th>Age</th>
-<th>Gender</th>
-<th>Address</th>
-<th>Phone</th>
-<th>Email</th>
-
-</t>
-<?php
-
-
-while($rows=mysqli_fetch_assoc($result))
-{
-?>
-<tr>
-     <td><?php echo $rows['pat_id']?></td>
-     <td><?php echo $rows['pat_fname']?></td>
-     <td><?php echo $rows['pat_lname']?></td>
-     <td><?php echo $rows['pat_age']?></td>
-     <td><?php echo $rows['pat_gender']?></td>
-     <td><?php echo $rows['pat_address']?></td>
-      <td><?php echo $rows['pat_phone']?></td>
-       <td><?php echo $rows['pat_email']?></td>
-</tr>
-<?php
-
-}
-?>
-     </table>
+          }
+          ?>
+           </table>
 
                          </div>
-                    
-                    
                     </div>
                </form>
           </div>
      </div>
-
 
 </body>
 

@@ -91,11 +91,11 @@ Avissaweela base hospital radiology department
                          <li><a href="#news" class="smoothScroll">News</a></li>
                          <li><a href="#google-map" class="smoothScroll">Contact Us</a></li>
                          <?php if ($_SESSION["user"] == null) {
-    ?>
+                         ?>
                          <li><a href="#google-map" class="smoothScroll">Login</a></li>
 
                          <?php
-} else { ?>
+                         } else { ?>
                          <li><a href="./assets/logoutPHP.php">Logout</a></li>
                          <a class="btn btn-dark"
                               style="position: fixed; bottom:0; right:0; width: 300px; z-index:2; background: #2D3179; color: white;"
@@ -429,12 +429,6 @@ Avissaweela base hospital radiology department
           <div class="container">
                <div class="row">
                     <div class="col-md-6 col-sm-6">
-                         <!-- How to change your own map point
-            1. Go to Google Maps
-            2. Click on your location point
-            3. Click "Share" and choose "Embed map" tab
-            4. Copy only URL and paste it within the src="" field below
-	-->
                          <iframe
                               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.4419063966516!2d80.20519271472074!3d6.9570846949738065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3a99845eec381%3A0xb3166156d960b852!2sBase%20Hospital%20Avissawella!5e0!3m2!1sen!2slk!4v1628302010028!5m2!1sen!2slk"
                               width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>

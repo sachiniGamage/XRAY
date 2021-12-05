@@ -2,9 +2,7 @@
      //start session
      session_start();
      include 'config/config.php';
-      
-
-     
+          
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -40,18 +38,14 @@ Avissaweela base hospital radiology department
      <!-- PRE LOADER -->
      <section class="preloader">
           <div class="spinner">
-
                <span class="spinner-rotate"></span>
-
           </div>
      </section>
-
 
      <!-- HEADER -->
      <header>
           <div class="container">
                <div class="row">
-
                     <div class="col-md-4 col-sm-5">
                          <p>Welcome to Radiology Department</p>
                     </div>
@@ -63,7 +57,6 @@ Avissaweela base hospital radiology department
                          <span class="email-icon"><i class="fa fa-envelope-o"></i> <a
                                    href="#">radiologyavissawella@gmail.com</a></span>
                     </div>
-
                </div>
           </div>
      </header>
@@ -93,12 +86,10 @@ Avissaweela base hospital radiology department
                          <li><a href="">Login</a></li>
                     </ul>
                </div>
-
           </div>
 
      </section>
      <!-- Register -->
-
     <div class="column">
                     <div class="col-md-5 col-sm-5 form_section">
                          <h4 style="margin-bottom:3rem;">Admin Register</h4>
@@ -131,12 +122,10 @@ Avissaweela base hospital radiology department
                                    click here to login</button>
                          </div>
                     </div>
-
      </div>
     
 
      </div>
-
      <script>
         function openDoctorForm() {
             document.getElementById("AdminForm").style.display = "block";
@@ -173,17 +162,11 @@ Avissaweela base hospital radiology department
                  </div>
             </div>
 
-
-    
-
-
      <!-- FOOTER -->
      
      <footer data-stellar-background-ratio="5">
           <div class="container">
                <div class="row">
-
-
                     <div class="col-md-4 col-sm-4">
                          <div class="footer-thumb">
                               <h4 class="wow fadeInUp" data-wow-delay="0.4s">Contact Info</h4>

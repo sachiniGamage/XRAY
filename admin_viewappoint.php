@@ -6,9 +6,6 @@
 
      $result = mysqli_query($con, $query);
 
-
-  
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -28,7 +25,7 @@
      <link rel="stylesheet" href="css/owl.theme.default.min.css">
     
      
-    <link rel="stylesheet" href="css/style.css"/>
+     <link rel="stylesheet" href="css/style.css"/>
      <link rel="stylesheet" href="css/tooplate-style.css">
 
 </head>
@@ -76,103 +73,92 @@
                          <li><a href="patientRegister.php" class="smoothScroll">Patient</a></li>
                          <li><a href="#news" class="smoothScroll">News</a></li>
                          <li><a href="#gggg" class="smoothScroll">Contact Us</a></li>
- 
-               
+
+               <div class="form-v10-content">
+                              <form class="form-detail" action="" method="post" >
+                                   <div class="form-left">
+                                        <h2>Appointment Infomation</h2>
+                                        <div class="form-row">
+
+     <body>
+          <link rel = "stylesheet" type="text/css" href="../css/tablecss.css">
+          <style>
+
+               #button {
+                    background-color: #25cc9a; /* Green */
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+               }
+               #customers {
+                    font-family: Arial, Helvetica, sans-serif;
+                    border-collapse: collapse;
+                    width: 100%;
+               }
+
+               #customers td, #customers th {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+               }
+
+               #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+               #customers tr:hover {background-color: #ddd;}
+
+               #customers th {
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                    text-align: left;
+                    background-color: #25cc9a;
+                    color: white;
+               }
+          </style>
+          <a href="adminappointInvoice.php" id="button" class="button">Print PDF</a> 
+          <br>
 
 
+          <table id="customers">
+               <tr>
+               </tr>
+               <t><br>
+                    <th>ID</th>
+                    <th>First Name </th>
+                    <th>Last Name</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>X-ray Type</th>
+                    <th>Phone</th>
+                    <th>Details</th>
+               </t>
+     <?php
+          while($rows=mysqli_fetch_assoc($result))
+          {
+          ?>
+          <tr>
+               <td><?php echo $rows['app_id']?></td>
+               <td><?php echo $rows['app_patfname']?></td>
+               <td><?php echo $rows['app_patlname']?></td>
+               <td><?php echo $rows['app_date']?></td>
+               <td><?php echo $rows['app_time']?></td>
+               <td><?php echo $rows['app_type']?></td>
+               <td><?php echo $rows['app_phone']?></td>
+               <td><?php echo $rows['app_details']?></td>
+          </tr>
+     <?php
 
+     }
+     ?>
+          </table>
 
-<div class="form-v10-content">
-               <form class="form-detail" action="" method="post" >
-                    <div class="form-left">
-                         <h2>Appointment Infomation</h2>
-                         <div class="form-row">
-
-<body>
-     <link rel = "stylesheet" type="text/css" href="../css/tablecss.css">
-<style>
-
-  #button {
-  background-color: #25cc9a; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-#customers {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-#customers td, #customers th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-#customers tr:nth-child(even){background-color: #f2f2f2;}
-
-#customers tr:hover {background-color: #ddd;}
-
-#customers th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #25cc9a;
-  color: white;
-}
-</style>
-    <a href="adminappointInvoice.php" id="button" class="button">Print PDF</a> 
-<br>
-
-
-<table id="customers">
-<tr>
-</tr>
-<t><br>
-<th>ID</th>
-<th>First Name </th>
-<th>Last Name</th>
-<th>Date</th>
-<th>Time</th>
-<th>X-ray Type</th>
-<th>Phone</th>
-<th>Details</th>
-
-</t>
-<?php
-
-
-while($rows=mysqli_fetch_assoc($result))
-{
-?>
-<tr>
-     <td><?php echo $rows['app_id']?></td>
-     <td><?php echo $rows['app_patfname']?></td>
-     <td><?php echo $rows['app_patlname']?></td>
-     <td><?php echo $rows['app_date']?></td>
-     <td><?php echo $rows['app_time']?></td>
-     <td><?php echo $rows['app_type']?></td>
-      <td><?php echo $rows['app_phone']?></td>
-       <td><?php echo $rows['app_details']?></td>
-</tr>
-<?php
-
-}
-?>
-     </table>
-
+                              </div>
                          </div>
-                    
-                    
-                    </div>
-               </form>
+                    </form>
+               </div>
           </div>
-     </div>
-
 
 </body>
 

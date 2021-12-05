@@ -102,7 +102,6 @@
                if ($num_rows > 0) {
                    while ($data = mysqli_fetch_array($result)) {
                        $current_ind += 1;
-                       //$current_app_id = $data["app_id"];
                        $current_app_patfname = $data["pat_fname"];
                        $current_app_type = $data["pat_lname"]; ?>
 
@@ -128,20 +127,18 @@
 						<input type="text" name="pat_lname" class="additional" id="pat_lname" placeholder="LastName" required>
 					</div>
 					
-			
-					
-						<div class="form-row ">
-							<input type="text" name="pat_age" class="code" id="pat_age" placeholder="Age" required>
-						</div>
-						
-						<div class="form-row">
-							<input type="text" name="pat_gender" class="street" id="pat_gender" placeholder="Gender" required>
-						</div>
-				
-					
-						<div class="form-row">
-							<input type="text" name="pat_address" class="phone" id="pat_address" placeholder="Address" required>
-						</div>
+                         <div class="form-row ">
+                              <input type="text" name="pat_age" class="code" id="pat_age" placeholder="Age" required>
+                         </div>
+                         
+                         <div class="form-row">
+                              <input type="text" name="pat_gender" class="street" id="pat_gender" placeholder="Gender" required>
+                         </div>
+               
+                    
+                         <div class="form-row">
+                              <input type="text" name="pat_address" class="phone" id="pat_address" placeholder="Address" required>
+                         </div>
 					</div>
 					<div class="form-row">
 						<input type="text" name="pat_phone" id="pat_phone" class="input-text" placeholder="Phone Number">

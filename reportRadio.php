@@ -60,8 +60,6 @@ class myPDF extends FPDF{
     function viewTable2($db2){
         $this -> SetFont('Times','',12);
         $patID=$_POST["patID"];
-        // var_dump($patID);
-        // $patID=5;
         $stmt2 = $db2 -> query("SELECT `pat_fname`, `pat_lname`, `pat_age`, `pat_gender`, `pat_phone` FROM `patient` WHERE `pat_id`='".$patID."'");
         while($data2 = $stmt2->fetch(PDO :: FETCH_OBJ)){
             $this -> Cell(40,10,$data2 -> pat_fname,0,0,'C');
